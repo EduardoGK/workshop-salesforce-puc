@@ -1,0 +1,15 @@
+<apex:page showHeader="true" sidebar="true" controller="VehicleCtrl">
+	<apex:sectionHeader title="My vehicles" subtitle="List" />
+	<apex:pageBlock title="Actions">
+		<apex:pageBlockButtons location="top">
+			
+		</apex:pageBlockButtons>
+		<apex:pageBlockSection title="All vehicles">
+			<apex:pageBlockTable value="{!vehicles}" var="vehicle">
+				<apex:column value="{!vehicle.Id}"></apex:column>
+				<apex:column value="{!vehicle.Name}"></apex:column>
+				<apex:column value="{!vehicle.Plate__c}"></apex:column>
+			</apex:pageBlockTable>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>
